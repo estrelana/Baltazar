@@ -1,0 +1,353 @@
+:root {
+    --colorWhite: #FFFFFF;
+    --colorBlack: #000000;
+    --colorPrin: #d6ccc2;
+    --colorGray: #6c757d;
+    --fonte-bold: 'bold', cursive;
+    --fonte-ligth: 'light', cursive;
+    --fonte-semiBold: 'semiBold', cursive;
+    --fonte-regular: 'regular', cursive;
+}
+
+@font-face {
+    font-family: bold;
+    src: url('/fonte/montserrat/Montserrat-Bold.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: light;
+    src: url('/fonte/montserrat/Montserrat-Light.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: semiBold;
+    src: url('/fonte/montserrat/Montserrat-SemiBold.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: regular;
+    src: url('/fonte/montserrat/Montserrat-Regular.ttf') format('opentype');
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.padrao {
+    width: 80%;
+    margin: auto;
+}
+
+.s1Padrao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    margin-right: 3%;
+}
+
+.s1 {
+    height: 100px;
+    background-color: var(--colorBlack);
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    text-transform: uppercase;
+    color: var(--colorWhite);
+    font-family: var(--fonte-regular);
+    font-size: 13px;
+}
+
+li a {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    margin: 0 10px 0 10px;
+    border-bottom: 4px solid #000000;
+    /*margem padrão que não aparece*/
+}
+
+li a:hover {
+    border-bottom: 4px solid #d5bdaf;
+}
+
+.s2 {
+    height: calc(100vh - 100px);
+    background:
+        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url('./imagens/f13.jpg') no-repeat;
+    background-position: center;
+    /*posiciona a imagem no centro*/
+    background-size: cover;
+    /*deixa a imagem responsiva*/
+    overflow: hidden;
+    /*tudo que for maior horizontalmente ele ignora, não criando assim barra horinzontal*/
+    font-family: var(--fonte-regular);
+    font-size: 25px;
+}
+
+.s2 .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.s2 .slide {
+    width: 100vw;
+    height: 100%;
+    display: inline-block;
+}
+
+.s2 .textBanner {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--colorWhite);
+    font-family: var(--fonte-ligth);
+}
+
+.s2 .textBanner span {
+    color: var(--colorPrin);
+}
+
+.button {
+    background-color: var(--colorPrin);
+    font-family: var(--fonte-semiBold);
+    padding: 12px 22px;
+    border-radius: 20px;
+    border: none;
+    margin: 20px 0 0 0;
+
+}
+
+.textBanner p {
+    font-size: 20px;
+    margin: 20px 0 0 0;
+}
+
+.s2 .slide-pointer {
+    width: 100vw;
+    height: 15px;
+    position: absolute;
+    margin-top: -50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slide-pointer .circle {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #d5bdaf;
+    border-radius: 100%;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.ativo {
+    background-color: var(--colorPrin);
+}
+
+.padrao h1,
+.padrao h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.padrao h1 {
+    margin-top: 50px;
+    font-family: var(--fonte-bold);
+}
+
+.padrao h2 {
+    margin-top: 12px;
+    font-family: var(--fonte-semiBold);
+    font-size: 14px;
+    color: var(--colorGray);
+}
+
+.padrao p {
+    font-family: var(--fonte-ligth);
+    margin-top: 15px;
+}
+
+.dark {
+    background-color: var(--colorBlack);
+    width: 100%;
+}
+
+.padrao.dark h1 {
+    padding: 50px 0 7px 0;
+    font-family: var(--fonte-bold);
+    color: var(--colorPrin);
+}
+
+.padrao.dark h2 {
+    margin-top: 12px;
+    font-family: var(--fonte-semiBold);
+    font-size: 14px;
+    color: var(--colorWhite);
+}
+
+.padrao.dark p {
+    font-family: var(--fonte-ligth);
+    margin-top: 15px;
+    text-align: center;
+    color: var(--colorPrin);
+}
+
+.s3Body {
+    display: flex;
+    margin-top: 30px;
+}
+
+.s3Body-left {
+    flex: 1;
+}
+
+.s3Body-right {
+    width: 400px;
+    text-align: center;
+}
+
+.s3Body-left p {
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.s3Body-right img {
+    width: 380px;
+    border-radius: 3px;
+}
+
+.icon {
+    color: aqua;
+}
+
+.s4Body {
+    display: flex;
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 50px;
+}
+
+.service {
+    flex: 1;
+    border-right: 1px solid #333;
+
+}
+
+.service:first-child {
+    border-left: 1px solid #333;
+}
+
+
+.service h3 {
+    color: var(--colorWhite);
+    font-family: var(--fonte-regular);
+    margin-top: 10px;
+}
+
+.service p {
+    font-size: 13px;
+}
+
+.s5Body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.s5-filters {
+    border: 1px solid #6c757d;
+    border-radius: 30px;
+    background-color: var(--colorPrin);
+    display: inline-block;
+    padding: 0 20px 0 20px;
+    max-width: 550px;
+    margin: auto;
+}
+
+.s5-filters li {
+    display: inline-block;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    border-left: 1px solid #6c757d;
+    font-family: var(--fonte-regular);
+    text-transform: uppercase;
+    font-size: 13px;
+    border-top: 3px solid #d5bdaf;
+    border-bottom: 3px solid #d5bdaf;
+}
+
+.s5-filters li:hover {
+    border-bottom: 3px solid #6c757d;
+}
+
+.s5-filters li:first-child {
+    border-left: 0;
+}
+
+.s5-fotos {
+    width: 100vw;
+    max-width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.foto {
+    width: 240px;
+}
+
+.areafoto {
+    margin: 10px;
+    width: 220px;
+    height: 160px;
+}
+
+.areafoto img {
+    width: inherit;
+    height: inherit;
+}
+
+.infofoto {
+    position: absolute;
+    background-color: rgba(0, 0, 0, .5);
+    width: inherit;
+    height: inherit;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--colorWhite);
+}
+
+.areafoto:hover  .infofoto{
+    display: flex;
+}
