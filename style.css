@@ -157,7 +157,7 @@ li a:hover {
     align-items: center;
 }
 
-.slide-pointer .circle {
+.s2 .slide-pointer .circle {
     height: 15px;
     width: 15px;
     border: 2px solid #d5bdaf;
@@ -350,4 +350,57 @@ li a:hover {
 
 .areafoto:hover  .infofoto{
     display: flex;
+}
+
+.s6{
+    background:
+    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+    url('./imagens/f13.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    
+}
+
+.s6Body{
+    overflow: hidden;
+margin: auto;
+    max-width: 80%;
+    margin-top: 20px;
+}
+
+
+.s6Body .sliders {
+    width: 1000vw;
+    height: 100%;
+}
+
+.s6Body .slide {
+    width: 385px;
+    height: 100%;
+    display: inline-block;
+    background-color: var(--colorWhite);
+    margin-right: 20px;
+    min-height: 300px;
+}
+
+.s6 .slide-pointer {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.s6 .slide-pointer .circle {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #d5bdaf;
+    border-radius: 100%;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.ativo {
+    background-color: var(--colorPrin);
 }
