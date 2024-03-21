@@ -43,6 +43,7 @@
 
 body {
     overflow-x: hidden;
+    margin-bottom: 300px;
 }
 
 .padrao {
@@ -348,23 +349,23 @@ li a:hover {
     color: var(--colorWhite);
 }
 
-.areafoto:hover  .infofoto{
+.areafoto:hover .infofoto {
     display: flex;
 }
 
-.s6{
+.s6 {
     background:
-    linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
-    url('./imagens/f13.jpg') no-repeat;
+        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url('./imagens/f13.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     padding-bottom: 50px;
-    
+
 }
 
-.s6Body{
+.s6Body {
     overflow: hidden;
-margin: auto;
+    margin: auto;
     max-width: 80%;
     margin-top: 20px;
 }
@@ -382,6 +383,7 @@ margin: auto;
     background-color: var(--colorWhite);
     margin-right: 20px;
     min-height: 300px;
+    vertical-align: middle;
 }
 
 .s6 .slide-pointer {
@@ -403,4 +405,160 @@ margin: auto;
 
 .ativo {
     background-color: var(--colorPrin);
+}
+
+.s6 .slide img{
+    width: 150px;
+    height: auto;
+    border-radius: 100%;
+    margin: auto;
+  display: block;
+  margin-top: 10px;
+}
+
+.team {
+    text-align: center;
+}
+.team h4{
+    font-family: var(--fonte-regular);
+    text-transform: uppercase;
+    margin: 10px 0;
+
+}
+
+.team p{
+    font-family: var(--fonte-ligth);
+    text-transform: uppercase;
+    margin: 10px 0;
+    font-size: 11px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorPrin);
+    color: var(--colorBlack);
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.social a:hover{
+    background-color: aquamarine;
+}
+
+.s7Body{
+    text-align: center;
+}
+
+.s7Body img{
+    height: 150px;
+    border-radius: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+}
+
+.s7Body h4{
+    font-family: var(--fonte-regular);
+    margin: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.s7Body p{
+    font-family: var(--fonte-ligth);
+    margin: 12px;
+    font-size: 15px;
+}
+
+.s7Body strong{
+    font-family: var(--fonte-ligth);
+    font-size: 15px;
+    color: var(--colorGray);
+    display: inline-block; 
+    width:60%;
+}
+
+.menor{
+    width:40%;
+}
+
+.s7 .slide-pointer {
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.s7F .slide-pointer .circle {
+    height: 15px;
+    width: 15px;
+    border: 2px solid #d5bdaf;
+    border-radius: 100%;
+    margin: 8px;
+    cursor: pointer;
+}
+
+.s8 {
+    height: 150px;
+    width: 100%;
+    background:
+        linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)),
+        url('./imagens/teste.jpg') no-repeat;
+    background-position: center;
+    /*posiciona a imagem no centro*/
+    background-size: cover;
+    /*deixa a imagem responsiva*/
+    overflow: hidden;
+    /*tudo que for maior horizontalmente ele ignora, não criando assim barra horinzontal*/
+    font-family: var(--fonte-regular);
+    font-size: 25px;
+}
+
+.s9Body{
+    display: flex;
+}
+
+.planos{
+    min-width: 300px;
+    background-color: var(--colorPrin);
+    margin: 10px;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+}
+
+.planos h3{
+    font-family: var(--fonte-semiBold);
+    font-size: 15px;
+}
+
+.planos .valor{
+    font-family: var(--fonte-regular);
+    font-size: 17px;
+}
+
+.planos .mensal{
+    font-family: var(--fonte-regular);
+    font-size: 14px;
+}
+
+.s9Button{
+    border-radius: 20px;
+    background-color: var(--colorBlack);
+    text-transform: uppercase;
+    color: var(--colorPrin);
+    padding: 5px 17px;
+}
+
+.s10Body{
+    display: flex;
 }
