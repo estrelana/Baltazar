@@ -90,6 +90,10 @@ li a:hover {
     border-bottom: 4px solid #d5bdaf;
 }
 
+.menuMobile{
+    display: none;
+}
+
 .s2 {
     height: calc(100vh - 100px);
     background:
@@ -228,8 +232,9 @@ li a:hover {
 }
 
 .s3Body-right {
-    width: 400px;
-    text-align: center;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
 }
 
 .s3Body-left p {
@@ -240,6 +245,9 @@ li a:hover {
 .s3Body-right img {
     width: 380px;
     border-radius: 3px;
+    background-size: cover; /* ou 'contain' */
+ background-repeat: no-repeat;
+ background-position: center;
 }
 
 .icon {
@@ -313,22 +321,25 @@ li a:hover {
 
 .s5-fotos {
     width: 100vw;
-    max-width: 80%;
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     margin-top: 20px;
+
 }
 
 .foto {
-    width: 240px;
+    width: 280px;
+    margin-right: 10px;
 }
 
 .areafoto {
     margin: 10px;
-    width: 220px;
+    width: 260px;
     height: 160px;
+
 }
 
 .areafoto img {
@@ -525,6 +536,7 @@ li a:hover {
 
 .s9Body {
     display: flex;
+    overflow: hidden;
 }
 
 .planos {
@@ -727,7 +739,8 @@ textarea:focus {
 .direitosAutorais{
     color: var(--colorWhite);
     font-family: var(--colorPrin);
-    margin-top: 100px;
+    margin-top: 170px;
+    display: flex;
 }
 
 .s13 i{
@@ -736,9 +749,144 @@ textarea:focus {
 
 .rodape div p {
     color: var(--colorWhite);
+    margin: auto;
 }
 
 .formm{
     margin: auto;
     background-color: var(--colorGray);
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    font-family: var(--fonte-ligth);
+    color: aliceblue;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.formm input{
+    width: 100%;
+    height: 40px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #CCC;
+    outline: 0;
+    color: #FFF;
+    font-size: 14px;
+    text-align: center;
+}
+
+a, a:hover, a:focus, a:active {
+    color: inherit;
+    text-decoration: none;
+   }
+   
+
+/*Responsividade Menu*/
+
+@media (max-width:1254px) and (min-width:1166px){
+    .menu{
+        font-size: 11px;
+    }
+    .logo{
+        width: 100px;
+    }
+}
+
+@media (max-width:1165px) {
+    nav{
+        position: absolute; /*precisa estar acima dos outros itens*/
+        z-index: 99;
+        background-color: rgba(0, 0, 0, .8);
+        width: 40vw;
+        height: auto;
+        margin-top: 610px;
+        right: 0;
+        font-size: 12px;
+        font-family: var(--fonte-semiBold);
+        display: none;
+    }
+
+    nav ul{  
+        flex-direction: column;
+    }
+
+    li a {
+        text-align: center;
+        height: 59px;
+        border: 0;
+        margin-left: 20px;
+    } 
+
+    .menuAtivo{
+        color:#a1b5d8;
+    }
+
+    .menuMobile{
+        display: flex;
+        color: var(--colorPrin);
+    }
+}
+
+/*Responsividade S3*/
+
+@media (min-width:800px) and (max-width:1023px)  {
+.s3Body p{
+    font-size: 14px;
+}
+}
+
+@media (max-width:985px){
+.s3Body{
+flex-direction: column;
+display: flex;
+ justify-content: center;
+}
+
+.s3Body-left {
+     text-align: center;
+     margin-bottom: 20px;
+}
+.s3Body-left button{
+    background-color: var(--colorPrin);
+    font-family: var(--fonte-semiBold);
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border:0;
+}
+
+.s3Body-right{
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    width: auto;
+}
+}
+
+/*Responsividade S4*/
+@media (max-width:1181px){
+    .s4Body{
+        flex-wrap: wrap;
+    }
+
+    .service{
+        min-width: 50%;
+        margin-bottom: 20px;
+        padding: 4px;
+    }
+}
+
+@media (max-width:685px) {
+    .s4Body{
+        flex-wrap: wrap;
+    }
+
+    .service{
+        min-width: 100%;
+        margin-bottom: 20px;
+        padding: 4px;
+    }
 }
