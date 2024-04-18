@@ -261,7 +261,7 @@ li a:hover {
 }
 
 .icon {
-    color: aqua;
+    color: #2b2d42;
 }
 
 .s4Body {
@@ -477,7 +477,8 @@ li a:hover {
     align-items: center;
     background-color: var(--colorPrin);
     color: var(--colorBlack);
-    border-radius: 100%;
+    border-radius: 5px;
+    padding: 2.5px;
     margin-right: 10px;
 }
 
@@ -736,7 +737,7 @@ textarea:focus {
 }
 
 .icon {
-    background-color: var(--colorGray);
+    background-color: var(--colorPrin);
     border-radius: 100%;
     height: 30px;
     width: 30px;
