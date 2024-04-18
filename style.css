@@ -3,10 +3,10 @@
     --colorBlack: #000000;
     --colorPrin: #d6ccc2;
     --colorGray: #6c757d;
-    --fonte-bold: 'bold', cursive;
-    --fonte-ligth: 'light', cursive;
-    --fonte-semiBold: 'semiBold', cursive;
-    --fonte-regular: 'regular', cursive;
+    --fonte-bold: 'bold', Arial;
+    --fonte-ligth: 'light', Arial;
+    --fonte-semiBold: 'semiBold', Arial;
+    --fonte-regular: 'regular', Arial;
 }
 
 @font-face {
@@ -73,7 +73,7 @@ body {
     justify-content: flex-end;
     text-transform: uppercase;
     color: var(--colorWhite);
-    font-family: var(--fonte-regular);
+    font-family: var(--fonte-ligth);
     font-size: 13px;
 }
 
@@ -227,6 +227,15 @@ li a:hover {
     margin-top: 30px;
 }
 
+.s3Body-left button {
+    background-color: var(--colorPrin);
+    font-family: var(--fonte-semiBold);
+    border-radius: 20px;
+    text-transform: uppercase;
+    padding: 10px 15px;
+    border: 0;
+}
+
 .s3Body-left {
     flex: 1;
 }
@@ -312,8 +321,8 @@ li a:hover {
     font-family: var(--fonte-regular);
     text-transform: uppercase;
     font-size: 13px;
-    border-top: 3px solid #d5bdaf;
-    border-bottom: 3px solid #d5bdaf;
+    border-top: 3px solid #d6ccc2;
+    border-bottom: 3px solid #d6ccc2;
 }
 
 .s5-filters li:hover {
@@ -362,6 +371,13 @@ li a:hover {
     justify-content: center;
     flex-direction: column;
     color: var(--colorWhite);
+}
+
+.infofoto h4{
+    text-transform: uppercase;
+}
+.infofoto p {
+    text-align: center;
 }
 
 .areafoto:hover .infofoto {
@@ -542,6 +558,7 @@ li a:hover {
 .s9Body {
     display: flex;
     overflow: hidden;
+    margin-top: 15px;
 }
 
 .planos {
@@ -909,6 +926,10 @@ a:active {
         margin-bottom: 20px;
         padding: 4px;
     }
+
+    .tres{
+        border-left: 1px solid #333;
+    }
 }
 
 @media (max-width:685px) {
@@ -920,6 +941,10 @@ a:active {
         min-width: 100%;
         margin-bottom: 20px;
         padding: 4px;
+    }
+
+    .dois{
+        border-left: 1px solid #333;
     }
 }
 
@@ -1010,13 +1035,10 @@ a:active {
 }
 
 /*Responsividade S12*/
-@media (max-width:630px) {
+@media (max-width:1000px) {
     .s12Info {
         width: 100%;
     }
-}
-
-@media (max-width:850px) {
 }
 
 /*Responsividade S13*/
